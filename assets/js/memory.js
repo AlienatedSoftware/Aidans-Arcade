@@ -53,6 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
 
     const grid = document.querySelector('.grid')
+    var cardsChosen = []
+    var cardsChosenId = []
+    var cardsWon = []
 
     //Board
     function createBoard() {
@@ -60,7 +63,38 @@ document.addEventListener('DOMContentLoaded', () => {
             var card = document.createElement('img')
             card.setAttribute('src', 'assets/images/memory/question-mark.png')
             card.setAttribute('data-id', i)
+            // card.addEventListener('click', flipCard)
             grid.appendChild(card)
+        }
+    }
+
+    //Card Match
+    function checkForMatch() {
+        var cards = document.querySelectorAll('img')
+        const optionOneId = cardsChosenId[0]
+        const optionTwoId = cardsChosenId[1]
+        if (cardsChosen[0] === cardsChosen[1]) {
+            alert('Match!')
+            cards[optionOneId].setAttribute('src', 'assets/images/white.png')
+            cards[optionTwoId].setAttribute('src', 'assets/images/white.png')
+            cardsWon.push(cardsChosen)
+        }   else {
+            cards[optionOneId].setAttribute('src', 'assets/images/question-mark.png')
+            cards[optionTwoId].setAttribute('src', 'assets/images/question-mark.png')
+            alert('Try Again!')
+        }
+        cardsChosen = []
+        cardsChosenId = []
+    }
+
+    //Flip Card
+    function flipCard() {
+        var cardId = this.getAttribute('data-id')
+        cardsChosen.push(cardArray[cardId].name)
+        cardsChosenId.push(cardId)
+        this.setAttribute('src', cardArray[cardId].img)
+        if (cardsChosen.length === 2) {
+            setTimeout(checkForMatch, 500)
         }
     }
 

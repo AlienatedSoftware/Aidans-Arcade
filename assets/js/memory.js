@@ -51,4 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'assets/memory/rubik.png'
         },
     ]
+
+    const grid = document.querySelector('.grid')
+
+    //Board
+    function createBoard() {
+        for (let i = 0; i < cardArray.length; i++) {
+            var card = document.createElement('img')
+            card.setAttribute('src', 'assets/images/memory/question-mark.png')
+            card.setAttribute('data-id', i)
+            grid.appendChild(card)
+        }
+    }
+
+    createBoard()
+
 })

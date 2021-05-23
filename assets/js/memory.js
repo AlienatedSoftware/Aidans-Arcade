@@ -4,55 +4,58 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'game console',
-            img: 'assets/memory/game-console.png'
+            img: 'assets/images/memory/game-console.png'
         },
         {
             name: 'game console',
-            img: 'assets/memory/game-console.png'
+            img: 'assets/images/memory/game-console.png'
         },
         {
             name: 'gamer',
-            img: 'assets/memory/gamer.png'
+            img: 'assets/images/memory/gamer.png'
         },
         {
             name: 'gamer',
-            img: 'assets/memory/gamer.png'
+            img: 'assets/images/memory/gamer.png'
         },
         {
             name: 'ghost',
-            img: 'assets/memory/ghost.png'
+            img: 'assets/images/memory/ghost.png'
         },
         {
             name: 'ghost',
-            img: 'assets/memory/ghost.png'
+            img: 'assets/images/memory/ghost.png'
         },
         {
             name: 'hand held',
-            img: 'assets/memory/hand-held.png'
+            img: 'assets/images/memory/hand-held.png'
         },
         {
             name: 'hand held',
-            img: 'assets/memory/hand-held.png'
+            img: 'assets/images/memory/hand-held.png'
         },
         {
             name: 'heart',
-            img: 'assets/memory/heart.png'
+            img: 'assets/images/memory/heart.png'
         },
         {
             name: 'heart',
-            img: 'assets/memory/heart.png'
+            img: 'assets/images/memory/heart.png'
         },
         {
             name: 'rubik',
-            img: 'assets/memory/rubik.png'
+            img: 'assets/images/memory/rubik.png'
         },
         {
             name: 'rubik',
-            img: 'assets/memory/rubik.png'
+            img: 'assets/images/memory/rubik.png'
         },
     ]
 
+    cardArray.sort(() => 0.5 - Math.random())
+
     const grid = document.querySelector('.grid')
+    const resultDisplay = document.querySelector('#result')
     var cardsChosen = []
     var cardsChosenId = []
     var cardsWon = []
@@ -63,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var card = document.createElement('img')
             card.setAttribute('src', 'assets/images/memory/question-mark.png')
             card.setAttribute('data-id', i)
-            // card.addEventListener('click', flipCard)
+            card.addEventListener('click', flipCard)
             grid.appendChild(card)
         }
     }
@@ -75,16 +78,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsChosenId[1]
         if (cardsChosen[0] === cardsChosen[1]) {
             alert('Match!')
-            cards[optionOneId].setAttribute('src', 'assets/images/white.png')
-            cards[optionTwoId].setAttribute('src', 'assets/images/white.png')
+            cards[optionOneId].setAttribute('src', 'assets/images/memory/white.png')
+            cards[optionTwoId].setAttribute('src', 'assets/images/memory/white.png')
             cardsWon.push(cardsChosen)
         }   else {
-            cards[optionOneId].setAttribute('src', 'assets/images/question-mark.png')
-            cards[optionTwoId].setAttribute('src', 'assets/images/question-mark.png')
+            cards[optionOneId].setAttribute('src', 'assets/images/memory/question-mark.png')
+            cards[optionTwoId].setAttribute('src', 'assets/images/memory/question-mark.png')
             alert('Try Again!')
         }
         cardsChosen = []
         cardsChosenId = []
+        resultDisplay.textContent = cardsWon.length
+        if (cardsWon.length === cardArray.length/2) {
+            resultDisplay.textContent = 'Well Done!'
+        }
     }
 
     //Flip Card

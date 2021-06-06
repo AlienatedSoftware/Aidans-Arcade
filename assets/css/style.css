@@ -34,7 +34,7 @@
     background-color: black;
     position: relative;
     left: 400px;
-    animation: block 2s infinite linear;
+    animation: block 3s infinite linear;
 }
 
 @keyframes block {
@@ -49,5 +49,14 @@
     position: relative;
     left: 400px;
     top: -500px;
-    animation: block 2s infinite linear;
+    animation: block 3s infinite linear;
+}
+
+#character {
+    width: 25px;
+    height: 25px;
+    background-color: purple;
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
 }

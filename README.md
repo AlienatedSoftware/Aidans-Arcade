@@ -1,11 +1,14 @@
 # Aidan's Arcade
 
+## Code Institute: Milestone Project 2
+
+-Mock Ups-
+
 https://alienatedsoftware.github.io/Second-Milestone-Aidans-Arcade/
 
 ## Table of Contents
 
 1. [Introduction](#Introduction)
-    1. [Important Information](#Important-Information)
 2. [UX](#UX)
     1. [Ideal User Demographic](#Ideal-User-Demographic)
     2. [User Stories](#User-Stories)
@@ -15,61 +18,70 @@ https://alienatedsoftware.github.io/Second-Milestone-Aidans-Arcade/
     1. [Design Features](#Design-Features) 
     2. [Existing Features](#Existing-Features)
     3. [Features to Implement in the future](#Features-to-Implement-in-the-future)
-4. [Issues and Bugs](#Issues-and-Bugs)
-5. [Technologies Used](#Technologies-Used)
+4. [Technologies Used](#Technologies-Used)
      1. [Main Languages Used](#Main-Languages-Used)
-     2. [Additional Languages Used](#Additional-Languages-Used)
-     3. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-6. [Testing](#Testing)
+     2. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
+5. [Testing](#Testing) 
      1. [Testing.md](TESTING.md)
-7. [Credits](#Credits)
-     1. [Content](#Content)
-     2. [Media](#Media)
-     3. [Code](#Code)
+6. [Issues and Bugs](#Issues-and-Bugs)
+7. [Deployment](#Deployment)
+8. [Acknowledgements](#Acknowledgements)
 ***
 
 ## Introduction
 
 Aidan's Arcade -  Interactive Frontend Development - Code Institute
 
-This project will act as a virtual hub for arcade games so that gamers can enjoy on their owned devices. The focus of the website is to target gamers and bored bored online users to seek a bit of fun to kill time with.
+The goal of Aidan's Arcade is to act as an safe haven to save people from boredom by allowing them to play some quick games straight from the web. 
+Entertainment is the primarily focus of what this project intends to deliever for the users. Giving users a choice on what game(s) they can play on that are very simple
+and easy to control.
 
-This project will contain a few games to choose from to be able to play on your own device, whenever at work, home or aboard! 
+Aidan's Arcade was created with desktop users in mind, as the primarily target audience will be either students or workers that want to kill time during breaks or fulfill the
+space they have created during their procrastination. Users will also have to option to play these games on handheld devices as well.
 
-### Important Information
+It has a clean, simplistic and minimal design to not make the screen too distracting, so the users can get straight into the game(s) with ease and focus.
 
--- Most of these games require a computer to play on, as the games are coded in JS that will only work with keyboard eventlisteners. --
-
-This is my second of four Milestone Porjects that I must complete during the Full Stack Development Porgram over at Code Institute.
-
-The primarialy requirements for this milestone is to make an interactive front end website with the use of **JavaScript**.
+This is my second of four Milestone Porjects that I must complete during the Full Stack Development Program over at Code Institute.
+The primarily requirements for this milestone is to make an interactive front end website with the use of **JavaScript**.
 
 [Back to top](#Aidan's-Arcade)
+***
 
 ## UX
+
+### Main Objectives
+
+- To create an experience for users to be entertained with. Majority of the users will be on their computers, where they will easily be able to switch tabs to this virtual hub of games for users to play. 
+- Allow users to choose between what games they want to play.
+- Simplistic and easy navigation.
+- To create an virtual arcard that is responsive to handheld devices.
 
 ### Ideal User Demographic
 
 The ideal users of this website are:
 
-- Passionate gamers
-- Bored online users wanting to kill time
-- Teens
+- Gamers
+- Work employees on break
+- Teens/Students
 
 ### User Stories
+
+The ideal user of this application would be someone who is procrastinating or on breaks during work/school. Where they will be entertained to kill their time, and relieve any stress they have put on themselves during their days of hard work. 
 
 #### Gamers
 
 1. As a gamer, I want to explore the enjoyment of being able to play fun and responsive games from the web.
+2. As a gamer, I want to be able to choose from different games and explore some variety.
 
-#### Bored online users
+#### Work Employees
 
-1. As a bored online user, I want to be able to quickly kill time on my work breaks.
-2. As a bored online user, I want to distract myself from today's burden.
+1. As an Work Employee, I want to be able to quickly kill time on my work breaks.
+2. As an Work Employee, I want to distract myself from today's hard work and to relive stress.
 
-#### Teens
+#### Teens/Students
 
-1. As a teen, I want to enjoy playing games.
+1. As a teen/student, I want to enjoy playing games.
+2. As a teen/student, I want to be able to play locally with my classmates to have fun.
 
 ### Development Planes
 
@@ -79,12 +91,12 @@ In order to create an engaging website, the developer used their own passion and
 This website will be focused on the following target audiences:
 - **Roles:**
      - Gamers
-     - Teens
-     - Time Killers
+     - Teens/Students
+     - Work Employees
 
 - **Demographic:**
      - 13 - 20+ year olds
-     - High School kids - Employee's
+     - High School kids - Employees
      - Gaming Community
 
 - **Psychographics:**
@@ -95,12 +107,6 @@ This website will be focused on the following target audiences:
           - Modern
           - Geeky
 
-// display what the website needs to do  for users //
-
-#### Scope
-
-// display scope here //
-
 #### Wireframe
 
 ![Wireframe]("Wireframe")
@@ -108,16 +114,20 @@ This website will be focused on the following target audiences:
 ###  Design
 
 #### Colour Scheme
-The main colours used throughout the website are a mixture of Dark grey, Black and White. (exploding the images used in games).
+
+The main colours used throughout the website are a mixture of Dark grey, Black and White. All used with Bootstrap defleaut colours for simplistic and slick design.
 
 #### Typography
-// Write up font usage //
+
+- Heading/Logo - [VT323](https://fonts.google.com/specimen/VT323?query=VT323)
+- Body - [Ubuntu](https://fonts.google.com/specimen/Ubuntu?query=Ubuntu)
 
 #### Imagery
 
 The imagery mostly consists of free SVG from "https://www.flaticon.com" and screenshots from game pages that are displayed on homepage.
 
 [Back to top](#Aidan's-Arcade)
+***
 
 ## Features
 
@@ -132,10 +142,17 @@ The imagery mostly consists of free SVG from "https://www.flaticon.com" and scre
 ### Memory Game (card matching)
 
 - A simple classic game of guessing which cards match, will be treated as a fun brain teaser when it comes to memory. All cards are randomly generated for new fresh experiences every replay.
+- Alert system to tell the users whenever or not they have found a match.
+- Scoring system that is displayed on the top of the screen, to keep track on how many matches the players have achieved.
 
 ### Flappy Game (flappy bird inspired)
 
 - A responsive flappy bird inspired game, with randomly generated obtacles what the player must avoid. How far will you reach?
+- An alert system for when the player crashes into the obstacle, that also includes the scoring on how many obstacles the user has passed through.
+
+[Back to top](#Aidan's-Arcade)
+***
+
 ## Technology used
 
 ### Languages Used
@@ -154,31 +171,69 @@ The imagery mostly consists of free SVG from "https://www.flaticon.com" and scre
      - Git was used for version control by utilising the GitPod terminal to commit to Git and push to GitHub.
 - [GitHub](https://github.com/ "Link to GitHub")
      - GitHub was used to store the project after pushing
-- [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
-     - Ba;samiq was used to create the wireframes during the design phase of the project.
+- [Figma](https://figma.com "Link to Figma homepage")
+     - Figma was used to create the wireframes during the design phase of the project.
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
 
+[Back to top](#Aidan's-Arcade)
+***
+
 ## Testing
 
-Based on the User Stories above, all users will be able to follow the flow of the website to find what they came for according to their stories. However they won't be able to actually fully book a ticket for their tours. This is just a milestone project, not an official website of the band.
+Based on the User Stories above, all users will be able to follow the flow of the website to find what they came for according to their stories.
 
 Google developer tools was used manually to check and test the live project on all different screen sizes. Used multiple devices and feedback from family & friends who went to the deployed site on their devices.
 
+[Back to top](#Aidan's-Arcade)
+***
+
 ## Issues and Bugs
 
-**Navbar Bugs**
-- Burger Button - Upon first implementing the "burger button" to have the navbar links collaspe into a single button for smaller devices. There was a bug that when users first opened the burger button to reveal all the nav links, the button would no longer close/collaspe. To address this issue, I had to delete a line of code as I linked an extra CDN for bootstrap which caused an interruption with the bootstrap package. 
+**Navbar / Matching Game Bug**
+- Originally, there was a real graphical designed logo for this project. However it became groundbreaking when it came to the matching game, as the way the matching game works, its coded to be played around with images as the matching cards, however, this became problematic as the code would glitch and act as if the logo was one of the potentional card matching images, along side the real cards. This caused the logo to be replaced with a card, and broke the navbar completely. To fix this, a simple logo replacement was put into use, with an icon from fontawesome, instead of an image logo.
 
-- Fixed Position - There was an issue upon trying to have the Navbar have a fixed position so it will always remain on top of the screen no matter how far the user scrolls down. Implementing the fixed position using bootstrap meant that I had to use additional CSS to prevent the body of the website from being cropped/hidden by the navbar as the navbar would act as it if was sat on top of the content, rather than on top. Doing this required to add a padding-top by the number of pixels that the navbar is, in this case, 100px.
+**Flappy Game Bug**
+- This is by far the most complicated JS code I have done, there were a lot of problems along the way when it came to responsiveness.
 
-**Tour Page**
-- Callout Sector - When this was implemented onto the site, the developer ran into an issue where the callout appeared on top of everything on the page, including the navbar. Completely eating the whole page. z-index was used to counter this issue, and allowed the callback to be set back behind the navbar, exactly how it should be. Hoever this caused another issue that caused the callout to be unclickable. This was because in the CSS, the absolute value was being used, which removes element from the DOM completely in terms of the normal flow. Removing the position: absolute from the CSS attributes fixed this issue entirely.
+[Back to top](#Aidan's-Arcade)
+***
 
-## Credits & References
+## Deployment
+
+This website was developed in multiple editors, Gitpod and vsCode, and version controlling was utilised via local (git) and online (github) repository technologies.
+
+Deploying this application was achieved through Github pages by:
+
+* Selecting the Repository from my list in the Github Dashboard.
+* Navigating to "Settings" and to the "Github Pages" section.
+* From the "Source" section, click on the dropdown and select "main" branch from the associated list.
+* Once "main" branch is selected, the page will auto-refresh and navigate the user to the top of the page with a visual ribbon display detailing, "Github pages source saved", indicating the success of the deployment.
+* The link to the website can then be found under the "Github Pages" section, with a ribbon notification stating:
+    "Your site is published at "https://<username>.github.io/<repo-name>/"
+
+
+To clone the website:
+
+Select the Repository from the Github Dashboard.
+* Click on the "Clone or download" green button located above and to the right of the "Add file" button.
+* Click on the "clipboard icon" to the right of the Git URL to copy the web URL of the Clone.
+* Open your preferred editor/IDE and navigate to the terminal window.
+* Type `git clone <paste-clone-url-here>` and press "Enter/Return" on your keyboard.
+* This will create a clone of the project for you.
+
+[Back to top](#Aidan's-Arcade)
+***
+
+## Acknowledgements
 
 All credits & References go the https://www.freecodecamp.org/ and it's members.
 
-Video tutorials used;
+Thank you to my mentor, and all students over on the slack community for code insitite for all the helpful tips given to tackle my work.
+
+References used;
 
 - https://www.youtube.com/watch?v=lhNdUVh3qCc
+- https://www.youtube.com/watch?v=PkZNo7MFNFg
+
+[Back to top](#Aidan's-Arcade)

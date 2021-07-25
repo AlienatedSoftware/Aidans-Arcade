@@ -17,7 +17,7 @@ https://alienatedsoftware.github.io/Second-Milestone-Aidans-Arcade/
 3. [Features](#Features)
 4. [Technologies Used](#Technologies-Used)
      1. [Languages Used](#Languages-Used)
-     2. [Frameworks & Tools Used](#Frameworks-&-Tools-Used)
+     2. [Frameworks & Tools Used](#Frameworks-and-Tools-Used)
 5. [Testing](#Testing)
 6. [Issues and Bugs](#Issues-and-Bugs)
 7. [Deployment](#Deployment)
@@ -39,8 +39,6 @@ It has a clean, simplistic and minimal design to not make the screen too distrac
 
 This is my second of four Milestone Porjects that I must complete during the Full Stack Development Program over at Code Institute.
 The primarily requirements for this milestone is to make an interactive front end website with the use of **JavaScript**.
-
-[Back to top](#Aidan's-Arcade)
 ***
 
 ## UX
@@ -135,8 +133,6 @@ The main colours used throughout the website are a mixture of Dark grey, Black a
 #### Imagery
 
 The imagery mostly consists of free SVG from "https://www.flaticon.com" and screenshots from game pages that are displayed on homepage.
-
-[Back to top](#Aidan's-Arcade)
 ***
 
 ## Features
@@ -164,18 +160,16 @@ The imagery mostly consists of free SVG from "https://www.flaticon.com" and scre
 
 - A built-in feature to automatically refresh the board for memory game instead of congratuated the player on matching all tiles.
 - A pause & start button for the flappy game, will increase enjoyability of user experience due to the randomisation of obtacles that could annoy users from trying to exit off the game.
-
-[Back to top](#Aidan's-Arcade)
 ***
 
-## Technology Used
+## Technologies Used
 
 ### Languages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
 - [JS](https://en.wikipedia.org/wiki/JavaScript "Link to JS Wiki")
 
-### Frameworks & Tools Used
+### Frameworks and Tools Used
 - [W3C Markup Validation Service](https://validator.w3.org/) - Used to check the validity and efficiency of the HTML and CSS code base.
 - [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/ "Link to Bootstrap page")
      - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
@@ -191,8 +185,6 @@ The imagery mostly consists of free SVG from "https://www.flaticon.com" and scre
      - Figma was used to create the wireframes during the design phase of the project.
 - [Am I Responsive?](http://ami.responsivedesign.is/# "Link to Am I Responsive Homepage")
      - Am I Responsive was used in order to see responsive design throughout the process and to generate mockup imagery to be used.
-
-[Back to top](#Aidan's-Arcade)
 ***
 
 ## Testing
@@ -210,8 +202,6 @@ Google developer tools was used manually to check and test the live project on a
 [Mobile](https://youtu.be/4kXOj4BBv1w)
 
 [Desktop](https://youtu.be/tvGVrtEtdoU)
-
-[Back to top](#Aidan's-Arcade)
 ***
 
 ## Issues and Bugs
@@ -225,8 +215,6 @@ Google developer tools was used manually to check and test the live project on a
 - Also with the use of random generation, this damages user experience as when the page is loaded, the player may or may not instantly hit an obstacle. Because of the limits of my knowledge and the use of math functions, I was unable to prevent this. If I were to prevent this, I would have to manually place in the obstacles myself, which would also damage replayiblity as the players are greeted with the same path over and over.
 
 - Another bug I found with responsive design, is that the game is broken on small handheld devices like the iPhone 5. It is not possible for me to allow reponsive .JS code in my capibility as of the time writing this. So what will happen if the game is played on an iPhone 5, is the player will not collide with the bottom of the canvas, and the holes in the obstacles could be generated off screen. To prevent this, a heads up will be given to the user once they click on the game to begin playing.
-
-[Back to top](#Aidan's-Arcade)
 ***
 
 ## Deployment
@@ -251,8 +239,6 @@ Select the Repository from the Github Dashboard.
 * Open your preferred editor/IDE and navigate to the terminal window.
 * Type `git clone <paste-clone-url-here>` and press "Enter/Return" on your keyboard.
 * This will create a clone of the project for you.
-
-[Back to top](#Aidan's-Arcade)
 ***
 
 ## Acknowledgements
@@ -260,5 +246,3 @@ Select the Repository from the Github Dashboard.
 All credits & References go the members of [freeCodeCamp](https://www.freecodecamp.org/) and a YouTube creator by the name of [KnifeCircus](https://www.youtube.com/channel/UCwjglHy7pCPF4ES-S7FKxQg).
 
 Thank you to my mentor, and all students over on the slack community for code insitite for all the helpful tips given to tackle my work.
-
-[Back to top](#Aidan's-Arcade)

@@ -71,6 +71,18 @@
 
 /*-------------------------------------Media Query*/
 
+@media screen and (max-width: 575px) {
+
+    #MemoryHome {
+        height: 200px;
+    }
+
+    #FlappyHome {
+        padding-top: 25px;
+        height: 200px;
+    }
+}
+
 @media screen and (max-width: 450px) {
 
     .grid {
@@ -106,5 +118,13 @@
     #game {
         width: 250px;
         height: 365px;
+    }
+
+    #MemoryHome {
+        height: 150px;
+    }
+
+    #FlappyHome {
+        height: 150px;
     }
 }

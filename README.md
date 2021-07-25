@@ -2,7 +2,7 @@
 
 ## Code Institute: Milestone Project 2
 
--Mock Ups-
+![Mockup](assets/images/readme/mockup.PNG "Mockup")
 
 https://alienatedsoftware.github.io/Second-Milestone-Aidans-Arcade/
 
@@ -15,14 +15,10 @@ https://alienatedsoftware.github.io/Second-Milestone-Aidans-Arcade/
     3. [Development Planes](#Development-Planes)
     4. [Design](#Design)
 3. [Features](#Features)
-    1. [Design Features](#Design-Features) 
-    2. [Existing Features](#Existing-Features)
-    3. [Features to Implement in the future](#Features-to-Implement-in-the-future)
 4. [Technologies Used](#Technologies-Used)
-     1. [Main Languages Used](#Main-Languages-Used)
-     2. [Frameworks, Libraries & Programs Used](#Frameworks,-Libraries-&-Programs-Used)
-5. [Testing](#Testing) 
-     1. [Testing.md](TESTING.md)
+     1. [Languages Used](#Languages-Used)
+     2. [Frameworks & Tools Used](#Frameworks-&-Tools-Used)
+5. [Testing](#Testing)
 6. [Issues and Bugs](#Issues-and-Bugs)
 7. [Deployment](#Deployment)
 8. [Acknowledgements](#Acknowledgements)
@@ -164,21 +160,27 @@ The imagery mostly consists of free SVG from "https://www.flaticon.com" and scre
 - A responsive flappy bird inspired game, with randomly generated obtacles what the player must avoid. How far will you reach?
 - An alert system for when the player crashes into the obstacle, that also includes the scoring on how many obstacles the user has passed through.
 
+### Features to Implement in the future
+
+- A built-in feature to automatically refresh the board for memory game instead of congratuated the player on matching all tiles.
+- A pause & start button for the flappy game, will increase enjoyability of user experience due to the randomisation of obtacles that could annoy users from trying to exit off the game.
+
 [Back to top](#Aidan's-Arcade)
 ***
 
-## Technology used
+## Technology Used
 
 ### Languages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5 "Link to HTML Wiki")
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "Link to CSS Wiki")
 - [JS](https://en.wikipedia.org/wiki/JavaScript "Link to JS Wiki")
 
-### Frameworks Used
+### Frameworks & Tools Used
+- [W3C Markup Validation Service](https://validator.w3.org/) - Used to check the validity and efficiency of the HTML and CSS code base.
 - [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/ "Link to Bootstrap page")
      - Bootstrap was used to implement the responsiveness of the site, using bootstrap classes.
 - [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
-    - Google fonts was used to import the fonts "Roboto Condensed" and "RocknRoll One" into the style.css file. These fonts were used throughout the project.
+    - Google fonts was used to import the fonts "VT323" and "Ubuntu" into the style.css file. These fonts were used throughout the project.
 - [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
      - Font Awesome was used on all pages throughout the website to import icons for UX purposes.
 - [Git](https://git-scm.com/ "Link to Git homepage")
@@ -199,6 +201,16 @@ Based on the User Stories above, all users will be able to follow the flow of th
 
 Google developer tools was used manually to check and test the live project on all different screen sizes. Used multiple devices and feedback from family & friends who went to the deployed site on their devices.
 
+### Responsive Testing
+
+[Chrome Developer Tools Test](https://youtu.be/3K0egSsvFhA)
+
+### UX Test for both Mobile & Desktop
+
+[Mobile](https://youtu.be/4kXOj4BBv1w)
+
+[Desktop](https://youtu.be/tvGVrtEtdoU)
+
 [Back to top](#Aidan's-Arcade)
 ***
 
@@ -208,7 +220,11 @@ Google developer tools was used manually to check and test the live project on a
 - Originally, there was a real graphical designed logo for this project. However it became groundbreaking when it came to the matching game, as the way the matching game works, its coded to be played around with images as the matching cards, however, this became problematic as the code would glitch and act as if the logo was one of the potentional card matching images, along side the real cards. This caused the logo to be replaced with a card, and broke the navbar completely. To fix this, a simple logo replacement was put into use, with an icon from fontawesome, instead of an image logo.
 
 **Flappy Game Bug**
-- This is by far the most complicated JS code I have done, there were a lot of problems along the way when it came to responsiveness.
+- This is by far the most complicated JS code I have done, there were a lot of problems along the way when it came to responsiveness. Due to the useage of bootstrap, I was unable to fully fix the collision of the player in the game, instead it's hitbox is a little offset by a few pixels, causing the player to clip through the top of the border and not even being able to touch the bottom without the collision code triggering. To fix this I would have to rid all of the bootstrap elements and have a complete plain page for the game. But I chose to keep it's bootstrap design over no design as it is only a minimal glitch that players could adapt to.
+
+- Also with the use of random generation, this damages user experience as when the page is loaded, the player may or may not instantly hit an obstacle. Because of the limits of my knowledge and the use of math functions, I was unable to prevent this. If I were to prevent this, I would have to manually place in the obstacles myself, which would also damage replayiblity as the players are greeted with the same path over and over.
+
+- Another bug I found with responsive design, is that the game is broken on small handheld devices like the iPhone 5. It is not possible for me to allow reponsive .JS code in my capibility as of the time writing this. So what will happen if the game is played on an iPhone 5, is the player will not collide with the bottom of the canvas, and the holes in the obstacles could be generated off screen. To prevent this, a heads up will be given to the user once they click on the game to begin playing.
 
 [Back to top](#Aidan's-Arcade)
 ***
@@ -241,13 +257,8 @@ Select the Repository from the Github Dashboard.
 
 ## Acknowledgements
 
-All credits & References go the https://www.freecodecamp.org/ and it's members.
+All credits & References go the members of [freeCodeCamp](https://www.freecodecamp.org/) and a YouTube creator by the name of [KnifeCircus](https://www.youtube.com/channel/UCwjglHy7pCPF4ES-S7FKxQg).
 
 Thank you to my mentor, and all students over on the slack community for code insitite for all the helpful tips given to tackle my work.
-
-References used;
-
-- https://www.youtube.com/watch?v=lhNdUVh3qCc
-- https://www.youtube.com/watch?v=PkZNo7MFNFg
 
 [Back to top](#Aidan's-Arcade)

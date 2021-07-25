@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    //Cards
+    /*----Selectible Cards for players to choose from----*/
     const cardArray = [
         {
             name: 'game console',
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var cardsChosenId = []
     var cardsWon = []
 
-    //Board
+    /*----Game Board Creation----*/
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             var card = document.createElement('img')
@@ -71,15 +71,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    //Card Match
+    /*----Card Matching Function----*/
     function checkForMatch() {
         var cards = document.querySelectorAll('img')
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
-        if (cardsChosen[0] === cardsChosen[1]) {
+        
+        /*----Added Function to prevent players from picking same card to cheat----*/
+        if(optionOneId == optionTwoId) {
+            cards[optionOneId].setAttribute('src', 'assets/images/memory/question-mark.png')
+            cards[optionTwoId].setAttribute('src', 'assets/images/memory/question-mark.png')
+            alert('You clicked the same card twice, find where the matching pair is!')
+          }
+          else if (cardsChosen[0] === cardsChosen[1]) {
             alert('Match!')
             cards[optionOneId].setAttribute('src', 'assets/images/memory/white.png')
             cards[optionTwoId].setAttribute('src', 'assets/images/memory/white.png')
+            cards[optionOneId].removeEventListener('click', flipCard)
+            cards[optionTwoId].removeEventListener('click', flipCard)
             cardsWon.push(cardsChosen)
         }   else {
             cards[optionOneId].setAttribute('src', 'assets/images/memory/question-mark.png')
@@ -94,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    //Flip Card
+    /*----Card Flipping Function----*/
     function flipCard() {
         var cardId = this.getAttribute('data-id')
         cardsChosen.push(cardArray[cardId].name)
